@@ -1,0 +1,73 @@
+{
+  "name": "lib-cut-price",
+  "version": "0.1.5",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "cook",
+  "module": "dist/lib-cut-pric.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/lib-cut-pric.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/lib-cut-pric.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "homepage": "http:/www.qingting.fm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.7",
+    "autoprefixer": "^10.2.1",
+    "cssnano": "^4.1.10",
+    "husky": "^4.3.7",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-scss": "^2.6.1",
+    "size-limit": "^4.9.1",
+    "styled-components": "^5.2.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.3"
+  }
+}

@@ -1,0 +1,29 @@
+.header-view {
+  text-align: center;
+  overflow: scroll;
+  background: url('https://sss.qingting.fm/growth-active/qt-cpu-price/header-bg.png!/format/webp') left top / 100% no-repeat;
+  position: relative;
+  width: 100%;
+  min-height: 5rem;
+  padding-top: 0.52rem;
+  .title-image {
+    width:6.88rem;
+  }
+}
+
+.InitialDesc {
+  margin-top: 0.72rem;
+  font-size: 0.47rem;
+  margin-bottom: 0.21rem;
+  color:#540504;
+}
+
+.InitialSpan {
+  font-size: 0.47rem;
+  color:#540504;
+}
+
+.ImgButton {
+  margin-top: 1rem;
+  width: 70%;
+}
